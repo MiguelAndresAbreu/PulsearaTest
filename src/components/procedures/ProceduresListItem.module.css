@@ -1,0 +1,56 @@
+.procedureItem {
+    width: 941px;
+    height: 100px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    margin: 20px 5px 5px 88px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.text {
+    color: #949494;
+    text-align: right;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.procedureHeader {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+.procedureLabel {
+    color: #949494;
+    text-align: right;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.procedureContent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.procedureContent div {
+    font-size: 16px;
+    font-weight: 500; /* Slightly bolder text */
+    color: #333; /* Darker color for readability */
+}
+
+.procedureContent div:first-child strong {
+    color: #000; /* Strong color for the procedure name */
+}

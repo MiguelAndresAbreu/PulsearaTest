@@ -1,0 +1,22 @@
+.background {
+    background-color: #EDF3F1;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.title {
+    margin-bottom: 20px;
+    margin-top: 70px;
+    margin-left: 88px;
+    display: flex;
+    justify-content: flex-start; /* Aligns title to the left */
+
+    color: #000;
+    text-align: right;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}

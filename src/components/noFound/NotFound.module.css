@@ -1,0 +1,43 @@
+/* NotFound.module.css */
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.body img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.body b {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.buttonContainer {
+  margin-top: 20px;
+}
+
+.button {
+  display: flex;
+  height: 32px;
+  padding: 16px;
+  margin-left: 88px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  background-color :#3F48AD;
+}
+
+.button:hover {
+  background-color: #3F48AD;
+}
