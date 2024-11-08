@@ -26,7 +26,7 @@ const ProceduresForm = () => {
 
                             <div className={styles.inputContainer}>
                                 <span className={styles.procedureLabel}>Procedimiento {(index + 1).toString().padStart(2, '0')}</span>
-                                <Input name={`${name}.procedureName`} placeholder="Ej: Nombre del procedimiento" className={styles.inputField} />
+                                <Input name={`${name}.procedureName`} placeholder="Ej: Biopsia" className={styles.inputField} />
                             </div>
                             <div className={styles.inputContainer}>
                                 <span className={styles.procedureLabel}>Código</span>

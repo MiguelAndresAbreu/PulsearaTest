@@ -10,7 +10,7 @@ import FormLabel from "./FormLabel";
 const Input = ({
    name,
    label,
-   placeHolder,
+   placeholder,
    className,
    isNumber = false,
    containerClassName,
@@ -39,7 +39,7 @@ const Input = ({
                                     'p-invalid': required && !input.value,
                                     [className]: !!className,
                                 })}
-                                placeholder={placeHolder}
+                                placeholder={placeholder}
                                 autoComplete={autocomplete ? 'on' : 'off'}
                             />
                         </div>
@@ -53,7 +53,7 @@ const Input = ({
 Input.propTypes = {
     name: PropTypes.string.isRequired,
     label: PropTypes.string,
-    placeHolder: PropTypes.string,
+    placeholder: PropTypes.string,
     className: PropTypes.string,
     containerClassName: PropTypes.string,
     required: PropTypes.bool,
