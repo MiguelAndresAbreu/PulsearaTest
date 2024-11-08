@@ -1,6 +1,8 @@
 import React, {useEffect} from "react";
 import PropTypes from "prop-types";
 
+import styles from "../Layout.module.css";
+
 export const Title = ({ children }) => {
     useEffect(() => {
         if (children) {
@@ -9,7 +11,7 @@ export const Title = ({ children }) => {
     }, [children])
 
     return (
-        <h3>
+        <h3 className={styles.text}>
             {children}
         </h3>
     )

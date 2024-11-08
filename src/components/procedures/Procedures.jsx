@@ -11,6 +11,7 @@ import {createProcedure, deleteProcedure, updateProcedure} from "../../graphql/m
 
 import styles from "../noFound/NotFound.module.css";
 import {isEqual} from "lodash/lang";
+import EditImage from "../../svg/edit.svg";
 
 const Procedures = () => {
     const { data, loading, executor } = useQuery(listProcedures);
@@ -49,25 +50,29 @@ const Procedures = () => {
         executor();
     };
 
+    const editProceduresClassName = data?.listProcedures?.items.length === 0 ? styles.emptyButtonContainer : styles.buttonContainer;
     return (
         <div>
             {loading && <p>Cargando...</p>}
-            {!loading && !data?.listProcedures && <NotDate />}
+            {!loading && data?.listProcedures?.items.length === 0 && <NotDate />}
             {!loading && data?.listProcedures && (
-                <div>
+                <div className={styles.procedureListContainer}>
                     {data.listProcedures.items.map((procedure, index) => (
                         <ProceduresListItem
                             key={procedure.id}
                             procedure={procedure}
                             procedureNumber={index + 1}
-                            onEdit={() => showModal(procedure)}  // Open modal in edit mode
+                            onEdit={() => showModal(procedure)}
                         />
                     ))}
                 </div>
             )}
-
-            <div className={styles.buttonContainer}>
-                <Button label="Añadir procedimiento" onClick={() => showModal()} />
+            <div className={editProceduresClassName}>
+                <Button className={styles.editButton}
+                    icon={<img className={styles.editImage} src={EditImage} alt="Editar"/>}
+                    label="Editar procedimientos"
+                    onClick={() => showModal()}
+                />
             </div>
 
             <ModalForm

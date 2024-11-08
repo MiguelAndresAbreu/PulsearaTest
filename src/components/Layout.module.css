@@ -5,18 +5,21 @@
 }
 
 .title {
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     margin-top: 70px;
     margin-left: 88px;
     display: flex;
-    justify-content: flex-start; /* Aligns title to the left */
+    justify-content: flex-start;
+}
 
+.text {
     color: #000;
     text-align: right;
     font-feature-settings: 'liga' off, 'clig' off;
-    font-family: 'Roboto', sans-serif;
+    font-family: Raleway, sans-serif;
     font-size: 25px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    margin: 0;
 }

@@ -14,7 +14,7 @@ const NoData = () => {
                     <img src={noFoundImage} alt="No hay datos que mostrar" />
                 </p>
                 <div>
-                    <b>No hay datos que mostrar</b>
+                    <b className={styles.ifoNotData}>No hay datos que mostrar</b>
                 </div>
             </div>
         </div>

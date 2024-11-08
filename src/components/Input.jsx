@@ -12,6 +12,7 @@ const Input = ({
    label,
    placeHolder,
    className,
+   isNumber = false,
    containerClassName,
    required = false,
    autocomplete = false,
@@ -31,6 +32,7 @@ const Input = ({
                         <div>
                             <InputText
                                 {...input}
+                                type={isNumber ? 'number' : 'text'}
                                 required={required}
                                 id={name}
                                 className={classNames('w-full', {
@@ -55,6 +57,7 @@ Input.propTypes = {
     className: PropTypes.string,
     containerClassName: PropTypes.string,
     required: PropTypes.bool,
+    isNumber: PropTypes.bool,
 }
 
 export default Input
